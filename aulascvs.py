@@ -9,3 +9,4 @@ df = pd.DataFrame(np.random.randn(8, 3), index=index, columns=["A", "B", "C"])
 
 print(s)
 print(df)
+print(s+df)
