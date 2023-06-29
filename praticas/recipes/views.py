@@ -5,11 +5,12 @@ from django.http import HttpResponse
 
 
 def contato (request):
-    return HttpResponse('Contato BABY')
-
+    return (request, 'contato.html')
 
 def home (request):
-    return HttpResponse('welcome to the home BABY')
+    return render (request, 'recipes/home.html', context={
+        'name': 'Arthur Alves',
+    })
 
 
 def sobre(request):
